@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+/* General pags styls*/
+
+body {
+  margin: 0;
+  background-color: #5ba053;
+  color: white;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+header {
+  background-color: #215743;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+nav a:hover {
+  text-decoration: overline underline;
+  text-decoration-line: 2px;
+}
+.container {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #2e4231;
+  border: 3px double #365540;
+}
+.sidebar {
+  width: 25%;
+  background-color: #3d5e35;
+  border-left: 4px solid #97fb96;
+  padding: 15px;
+  float: left;
+  margin-right: 20px;
+}
+
+.sidebar ul {
+  padding-left: 30px;
+  margin-top: 10px;
+}
+.main-content {
+  width: 65%;
+  float: left;
+}
+footer {
+  background-color: #215743;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+}
