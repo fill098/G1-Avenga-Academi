@@ -4,9 +4,10 @@
 // Possible values:
 
 let input = prompt('Enter your birth year: ');
+debugger
 let year = parseInt(input,10);
-let sign;
-let zodiacValue;
+let sign = 'Not a valid sign'
+let zodiacValue = null;
 // Number.isNaN(NaN);        // true
 // Number.isNaN(5);          // false
 // Number.isNaN("NaN");      // false
