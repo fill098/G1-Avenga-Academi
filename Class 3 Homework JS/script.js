@@ -420,22 +420,29 @@ function formatFullName(firstName, lastName) {
 // isValidUsername("longusername123") → false
 
 
-function isValidUsername(username){
-    if (typeof username !== 'string') {
-        return null;
-        
-    }
-    if (username < 5 || username > 12) {
-        return false;
-        
-    }
-    if(!isNaN(username[0])){
-        return false;
-    }
-    return true;
+function isValidUsername(username) {
+    let isValid = true;
 
+    // proverka za falsy vrednosti
+    if(!username) {
+        isValid = false;
+    }
+    // proverka za string
+    if(typeof username !== 'string') {
+        isValid = false;
+    }
+    // proverka za dolzina
+    if(username.length <= 5 || username.length >= 12) {
+        isValid = false;
+    }
 
+    // proverka dali prviot karakter e broj
+    let firstChar = parseInt(username[0]);
+    if(Number.isNaN(firstChar)) {
+        isValid = false;
+    }
 
+    return isValid;
 }
 
 
