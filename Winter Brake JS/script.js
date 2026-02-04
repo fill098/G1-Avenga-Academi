@@ -190,22 +190,136 @@
 
 // console.log(areEqual(address1, address1));
 
-let post = {
-  title: "Filip",
-  body: "Muscilar",
-  author: "Mihajlovski",
-  views: 187,
-  comments: [
-    { author: "a", body: "b" },
-    { author: "c", body: "d" },
-  ],
-  isLIve: true,
-};
+// let post = {
+//   title: "Filip",
+//   body: "Muscilar",
+//   author: "Mihajlovski",
+//   views: 187,
+//   comments: [
+//     { author: "a", body: "b" },
+//     { author: "c", body: "d" },
+//   ],
+//   isLIve: true,
+// };
 
-console.log(post);
+// console.log(post);
 
- function Address(street, city, zipCode) {
-  this.street = street;
-  this.city = city;
-  this.zipCode = zipCode;
+//  function Address(street, city, zipCode) {
+//   this.street = street;
+//   this.city = city;
+//   this.zipCode = zipCode;
+// }
+
+// const numbers = arrayFromRande(1, 4);
+
+// function arrayFromRande(min, max) {
+//   const output = [];
+//   for (let i = min; i <= max; i++) {
+//     output.push(i);
+//   }
+//   return output;
+// }
+
+// console.log(numbers);
+
+// const numbers = [1, 2, 3, 4, 1, 1];
+// const output = except(numbers, [2, 1]);
+
+// function except(array, excluded) {
+//   const result = [];
+
+//   for (let value of array) {
+//     if (!excluded.includes(value)) {
+//       result.push(value);
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(output);
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// function move(array, index, ofset) {
+//   const output2 = [...array];
+//   const elememt = output2.splice(index, 1)[0];
+//   output2.splice(index + ofset, 0, elememt);
+//   return output2;
+// }
+// const output = move(numbers, 3, -2);
+
+// console.log(output);
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const coutn = countOcurences(numbers, 3);
+
+// console.log(coutn);
+
+// function countOcurences(array, searchElement) {
+// let count2 = 0;
+// for (element of array) {
+//   if (element === searchElement) count2++;
+// }
+// return count2;
+
+//   return array.reduce((acummulator, current) => {
+//     const ocurence = current === searchElement ? 1 : 0;
+//     return acummulator + ocurence;
+//   }, 0);
+// }
+
+// function countOcurences(array, searchElement) {
+//   return array.reduce(function (accumulator, current) {
+//     let occurrence = 0;
+
+//     if (current === searchElement) {
+//       occurrence = 1;
+//     }
+
+//     return accumulator + occurrence;
+//   }, 0);
+// }
+
+// const numbers = [1, 2, 8, 4, 5, 99];
+
+// const max = [];
+
+// function getMax(array) {
+//   //   let max = array[0];
+//   //   for (let i = 0; i < array.length; i++) {
+//   //     if (array[i] > max) {
+//   //       max = array[i];
+//   //     }
+//   //   }
+//   //   return max;
+
+//   return array.reduce((a, b) => (a > b ? a : b));
+// }
+
+// console.log(getMax(numbers));
+
+// const movies = [
+//   {title: 'a', year: 2018, rating: 4.5},
+//   {title: 'b', year: 2018, rating: 4.7},
+//   {title: 'c', year: 2018, rating: 3},
+//   {title: 'd', year: 2017, rating: 4.5},
+// ]
+
+// movies
+//   .filter(m => m.year === 2018 && m.rating >= 4)
+
+
+
+// function sum(...items) {
+//   if (items.length === 1 && Array.isArray(items[0])) items = [...items[0]];
+//   return items.reduce((a, b) => a + b);
+// }
+
+// console.log(sum(1, 2, 3, 4, 5, 6, 7));
+
+
+
+let circle = {
+
 }
