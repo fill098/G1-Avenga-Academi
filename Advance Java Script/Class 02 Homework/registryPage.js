@@ -20,9 +20,9 @@ function Student(firstName, lastName, age, email) {
 
 let database = [];
 
-let btn2 = document.getElementById("btn2");
+let studentForm = document.getElementById("form");
 
-btn2.addEventListener("click", function (event) {
+studentForm.addEventListener("submit", function (event) {
   event.preventDefault();
   let firstName = document.getElementById("input-firstname").value;
   let lastName = document.getElementById("input-lastname").value;
@@ -35,8 +35,5 @@ btn2.addEventListener("click", function (event) {
 
   console.log(database);
 
-  document.getElementById("input-firstname").value = "";
-  document.getElementById("input-lastname").value = "";
-  document.getElementById("input-age").value = "";
-  document.getElementById("input-email").value = "";
+  studentForm.reset();
 });

@@ -24,7 +24,8 @@ let reminders = [];
 
 function addReminder() {
   let titleInput = document.getElementById("title").value;
-  let priorityInput = document.getElementById("priority").value;
+  let priorityInput =
+    document.querySelector('input[name="priority"]:checked')?.value || "";
   let colorInput = document.getElementById("color").value;
   let descriptionInput = document.getElementById("description").value;
 
@@ -39,7 +40,9 @@ function addReminder() {
 
   console.log(reminders);
   document.getElementById("title").value = "";
-  document.getElementById("priority").value = "";
+  document
+    .querySelectorAll('input[name="priority"]')
+    .forEach((radio) => (radio.checked = false));
   document.getElementById("color").value = "";
   document.getElementById("description").value = "";
 }

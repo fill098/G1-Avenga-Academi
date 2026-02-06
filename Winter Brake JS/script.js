@@ -309,8 +309,6 @@
 // movies
 //   .filter(m => m.year === 2018 && m.rating >= 4)
 
-
-
 // function sum(...items) {
 //   if (items.length === 1 && Array.isArray(items[0])) items = [...items[0]];
 //   return items.reduce((a, b) => a + b);
@@ -318,8 +316,40 @@
 
 // console.log(sum(1, 2, 3, 4, 5, 6, 7));
 
+function Stopwatch() {
+  let startTime,
+    endTime,
+    running,
+    duration = 0;
 
+  this.start = function () {
+    if (running) {
+      throw new Error("Stop has alrady been started");
+    }
+    running = true;
 
-let circle = {
+    startTime = new Date();
+  };
+  this.stop = function () {
+    if (!running) {
+      throw new Error("StopWatch has not been started");
+    }
+    running = false;
 
+    endTime = new Date();
+    const seconds = (endTime.getTime() - startTime.getTime()) / 1000;
+    duration += seconds;
+  };
+  this.reset = function () {
+    startTime = null;
+    endTime = null;
+    running = false;
+    duration = 0;
+  };
+
+  Object.defineProperty(this, "duration", {
+    get: function () {
+      return duration;
+    },
+  });
 }

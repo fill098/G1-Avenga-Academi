@@ -39,7 +39,20 @@
     <h1>Remander App</h1>
 
     <input type="text" placeholder="Title" id="title" />
-    <input type="number" placeholder="Priority" id="priority" />
+    <div>
+      <label>
+        <input type="radio" name="priority" value="High" id="priority" />
+        High
+      </label>
+      <label>
+        <input type="radio" name="priority" value="Moderate" />
+        Moderate
+      </label>
+      <label>
+        <input type="radio" name="priority" value="Low" />
+        Low
+      </label>
+    </div>
     <input type="color" placeholder="Color" id="color" />
     <textarea placeholder="Description" id="description"></textarea>
     <button type="button" id="btn4">Adding the reminder</button>

@@ -16,6 +16,7 @@ let resultMovei = document.getElementById("result2");
 btn3.addEventListener("click", function () {
   let moveName = inputMovis.value.toLowerCase();
   let found = false;
+  let foundMove = "";
   for (let movie of movies) {
     if (moveName === movie.toLowerCase()) {
       found = true;
